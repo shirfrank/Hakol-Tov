@@ -36,11 +36,11 @@ The application includes user and admin access, leaderboards, and thresholds for
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/game-hub.git
+   git clone https://github.com/your-username/Hakol-Tov.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd game-hub
+   cd Hakol-Tov
    ```
 3. Install dependencies:
    ```bash
