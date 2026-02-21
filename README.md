@@ -1,107 +1,90 @@
-# Hakol-Tov
+# Hakol-Tov (הקול טוב!) 🎤🐦
+
+![Hakol-Tov Banner](logo.png)
 
 ## Overview
-This project is a Python-based GUI application that serves as a hub for three mini-games:
-- **Squeaky Bird**
-- **Pitch Perfect**
-- **Voice Target**
-
-The application includes user and admin access, leaderboards, and thresholds for gameplay. Players can log in to play games, view their scores, and compete with others.
+**Hakol-Tov** (a play on the Hebrew phrase for "everything is good" and "the voice is good") is a Python-based GUI application that serves as a central hub for three interactive, voice-controlled mini-games. Designed for both fun and vocal engagement, the application manages user sessions, personalized audio settings, and competitive leaderboards.
 
 ---
 
-## Features
-- **User Login**: Secure access for users and admins with individual thresholds.
-- **Play Games**: Run any of the three mini-games directly from the application.
-- **Leaderboards**: View scores and rankings, including cumulative, highest, and latest scores.
-- **Admin Controls**:
-  - Manage thresholds for users.
-  - Reset leaderboards.
+## 🎮 The Mini-Games
+
+### 1. Squeaky Bird
+![Squeaky Bird Asset](logo2.png)
+
+Navigate the bird through obstacles using your voice. 
+* **Mechanic**: Modulation of audio input (squeaks or speech) controls the bird's flight.
+* **Visuals**: Uses custom assets including:
+  <br>
+  <img src="bird2.png" alt="Squeaky Bird" width="50"> 
+  <img src="column.png" alt="Column" width="25"> 
+  <img src="bg2.png" alt="Background" width="60">
+
+### 2. Pitch Perfect
+Challenge your vocal precision by hitting specific pitch targets.
+* **Focus**: Vocal frequency control and accuracy.
+
+### 3. Voice Target
+A game focused on hitting specific vocal targets through sustained or varied audio input.
 
 ---
 
-## Installation
-### Prerequisites
-1. Python 3.10 or above
-2. Required Python libraries:
-   - `tkinter`
-   - `PIL`
-   - `subprocess`
-   - `json`
-   - `pygame`
-   - `sounddevice`
-   - `numpy`
-   - `scipy`
-
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/Hakol-Tov.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd Hakol-Tov
-   ```
-3. Install dependencies:
-   ```bash
-   pip install pillow pygame sounddevice numpy scipy
-   ```
-4. Run the application:
-   ```bash
-   python main_final.py
-   ```
+## ✨ Features
+* **User & Admin Access**: Secure login system with distinct roles.
+* **Personalized Thresholds**: Audio sensitivity is tailored to individual users, stored in `thresholds.json` to ensure the games respond accurately to different voices.
+* **Comprehensive Leaderboards**: View rankings including cumulative scores, highest scores, and latest performance.
+* **Admin Controls**: Specialized dashboard to manage user thresholds and reset leaderboard data.
 
 ---
 
-## File Structure
-- `main_final.py`: The main script for the Game Hub application.
-- `squeaky_bird_final.py`: Game script for Squeaky Bird.
-  - Dependencies: `pygame`, `pyaudio`, `numpy`, `math`, `json`.
-- `pitch_perfect_final.py`: Game script for Pitch Perfect.
-  - Dependencies: `pygame`, `random`, `sounddevice`, `numpy`, `scipy`.
-- `voice_target_final.py`: Game script for Voice Target.
-  - Dependencies: `pygame`, `pyaudio`, `numpy`, `math`, `time`.
-- `squeaky_bird_leaderboard.json`: JSON file to store leaderboard data for Squeaky Bird.
-- `pitch_perfect_leaderboard.json`: JSON file to store leaderboard data for Pitch Perfect.
-- `voice_target_leaderboard.json`: JSON file to store leaderboard data for Voice Target.
+### 🛠️ Installation
+
+**Steps**
+
+1.  **Clone the repository**:
+    ```bash
+    git clone [https://github.com/your-username/game-hub.git](https://github.com/your-username/game-hub.git)
+    cd game-hub
+    ```
+
+2.  **Install required libraries**:
+    ```bash
+    pip install pillow pygame sounddevice numpy scipy
+    ```
+
+3.  **Run the application**:
+    ```bash
+    python main_final.py
+    ```
 
 ---
 
-## Usage
-1. Start the application with `python main_final.py`.
-2. Log in using an existing username and password.
-   - Admin username: `clinait`
-   - Default user usernames: `shir`, `tom`, `ofri`, `mai`, `shaked`
-3. Navigate to the desired game or leaderboard using the GUI.
-4. Play games and check scores on the leaderboard.
+### 📁 File Structure
+
+* **`main_final.py`**: The primary GUI and central hub application.
+* **`squeaky_bird_final.py`**: Game logic for **Squeaky Bird**.
+    * **Assets**: 
+        <img src="bird2.png" alt="Bird" width="40"> 
+        <img src="column.png" alt="Pipe" width="20"> 
+        <img src="bg2.png" alt="Sky" width="50">
+* **`pitch_perfect_final.py`**: Game logic for **Pitch Perfect**.
+* **`voice_target_final.py`**: Game logic for **Voice Target**.
+* **`thresholds.json`**: Stores personalized audio trigger levels for each user.
+* **`score.json`**: Current session scoring and game data.
+* **`*_leaderboard.json`**: JSON files for persistent score tracking across games.
 
 ---
 
-## Contribution
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes and open a pull request.
+### 📖 Usage
+
+* **Login**: Access the hub using an existing account.
+    * **Admin User**: `clinait`
+    * **Standard Users**: `shir`, `tom`, `ofri`, `mai`, `shaked`
+* **Navigation**: Use the interactive GUI to select a mini-game or check the leaderboards.
+* **Gameplay**: Control the games entirely using your voice and microphone input.
 
 ---
 
-## License
-### MIT License
+### 📜 License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
+This project is licensed under the **MIT License**.
