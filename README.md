@@ -1,9 +1,12 @@
 # Hakol-Tov (הקול טוב!) 🎤🐦
+### Voice-Controlled Mini-Game Hub for Beit Loewenstein Rehabilitation Center
 
 ![Hakol-Tov Banner](logo.png)
 
-## Overview
-**Hakol-Tov** (a play on the Hebrew phrase for "everything is good" and "the voice is good") is a Python-based GUI application that serves as a central hub for three interactive, voice-controlled mini-games. Designed for both fun and vocal engagement, the application manages user sessions, personalized audio settings, and competitive leaderboards.
+## 🌟 Overview
+**Hakol-Tov** (a play on the Hebrew phrase for "everything is good" and "the voice is good") is a Python-based GUI application developed as a specialized hackathon project for **Beit Loewenstein Rehabilitation Center**. 
+
+The project serves as a therapeutic hub featuring three interactive mini-games controlled entirely by voice and audio input. By modulating pitch and volume, patients engage in a gamified environment that encourages **vocal exercise**, **breath control**, and **speech rehabilitation** in an enjoyable, rewarding way.
 
 ---
 
